@@ -60,7 +60,7 @@ button {
 }
 
 #save-btn, #retry-btn {
-  background: #cb252a; /* COR PARA ALTERAR */
+  background: #ff8cc9; /* COR PARA ALTERAR */
   color: white;
   border-radius: 6px;
   padding: 8px 16px;
@@ -118,7 +118,7 @@ button {
 }
 
 #save-video-btn {
-  background: #cb252a; /* COR PARA ALTERAR */
+  background: #ff8cc9; /* COR PARA ALTERAR */
   color: white;
   border-radius: 6px;
   padding: 8px 16px;
@@ -156,3 +156,4 @@ button {
   max-width: 80%;
   display: none;
 }
+
