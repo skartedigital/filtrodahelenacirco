@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HELENA 1 ANO</title>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-ec="mfz-640-24-ecb">
+
+  <video id="video" autoplay muted playsinline></video>
+  <img id="overlay" src="moldura.png" alt="Moldura" />
+
+  <div id="recording-indicator">🔴 REC 00:00</div>
+  <div id="loading-message">Aguarde… estamos preparando seu vídeo 📽️✨</div>
+
+  <div id="buttons">
+    <button id="switch-camera" title="Trocar câmera">🔄</button>
+    <button id="capture" title="Tirar foto">📸</button>
+    <button id="start-recording" title="Gravar vídeo">🎥</button>
+    <button id="stop-recording" title="Parar gravação" style="display:none;">⏹</button>
+  </div>
+
+  <canvas id="canvas" style="display:none;"></canvas>
+  <canvas id="recordingCanvas" style="display:none;"></canvas>
+
+  <div id="preview-container">
+    <img id="photo-preview" />
+    <button id="save-btn">Salvar na galeria</button>
+    <button id="retry-btn">Tirar outra</button>
+
+    <div id="instructions">
+      Se estiver no iPhone:<br>
+      Toque e segure a imagem e selecione “Salvar na Fototeca”.
+    </div>
+  </div>
+
+  <div id="video-preview-container">
+    <video id="video-preview" controls playsinline></video>
+    <button id="save-video-btn">Salvar vídeo</button>
+
+    <div id="video-instructions">
+      No iPhone, o vídeo vai para o app “Arquivos” (na pasta Downloads).<br>
+      Abra o app Arquivos, toque no vídeo, depois em compartilhar e selecione “Salvar Vídeo”.
+    </div>
+  </div>
+
+  <!-- JS externo -->
+  <script src="script.js"></script>
+</body>
+</html>
